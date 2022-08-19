@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let a = 13;
+      // let b = 73;
+      // let soma = 0;
+
+      // for (let i = a; i <= 73; i++) {
+      //   console.log((soma += i));
+
+      //   let media = soma / (b - a);
+      //   console.log(media.toFixed(0));
+      // }
+
+      let soma = 0;
+      let numeroAtual = 13;
+      let res = 73 - 13;
+
+      do {
+        soma += numeroAtual;
+        numeroAtual++;
+      } while (numeroAtual < 73);
+
+      let media = soma / res;
+
+      document.write(`A soma é: ${soma.toFixed(0)}`);
+      document.write("<br>");
+      document.write(`A media é: ${media.toFixed(0)}`);
+    </script>
+  </body>
+</html>
+<!-- 9. Escrever um algoritmo que calcule e mostre a média aritmética dos
+números lidos entre 13 e 73. -->
